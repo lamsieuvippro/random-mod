@@ -12,9 +12,9 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: current
-      - run: unzip -q stationmenu.zip
-      - run: cd stationmenu && gradle build
+      - run: unzip -q handcursor-mod-1.21.11.zip
+      - run: cd handcursor && gradle build
       - uses: actions/upload-artifact@v4
         with:
-          name: stationmenu-jar
-          path: stationmenu/build/libs/*.jar
+          name: handcursor-jar
+          path: handcursor/build/libs/*.jar
